@@ -1,0 +1,159 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Raleway:wght@300;500;700&display=swap');
+
+
+/* General Styling */
+body {
+    font-family: 'Crimson Pro', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background: #fffaf1; /* Soft paper-like background */
+    color: #5a4634;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    max-width: 320px;
+    background: #e8dcc2; /* Aged paper color */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.sidebar h2 {
+    margin: 0;
+    font-size: 64px;
+    font-family: 'Crimson Pro', serif;
+    color: #5a4634;
+}
+
+/* New Note Button */
+#new-note-btn {
+width: 90%;
+padding: 12px;
+margin: 15px 0;
+border: none;
+cursor: pointer;
+font-size: 16px;
+font-weight: bold;
+font-family: 'Raleway', sans-serif;
+background: #c2a477;
+color: white;
+border-radius: 8px;
+transition: 0.3s ease;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#new-note-btn:hover {
+background: #a6825d;
+}
+
+/* Notes List */
+#notes-list {
+list-style: none;
+padding: 0;
+width: 100%;
+}
+
+#notes-list li {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 12px;
+background: #f8f1e1;
+color: #5a4634;
+margin: 5px 0;
+border-radius: 6px;
+cursor: pointer;
+transition: 0.3s ease;
+font-weight: bold;
+font-family: 'Raleway', sans-serif;
+position: relative;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); /* Soft shadow effect */
+}
+
+#notes-list li:hover {
+background: #d9c4a3;
+}
+
+/* Delete Button (Always Visible but Faded) */
+.delete-note-btn {
+    background: transparent;
+    border: none;
+    color: #a65537;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    opacity: 0.04; /* Slightly faded */
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+#notes-list li:hover .delete-note-btn {
+opacity: 1; /* Fully visible on hover */
+}
+
+.delete-note-btn:hover {
+    color: #d9825d;
+}
+
+/* Make Note Title Move Right When Delete Button Appears */
+.note-title {
+    flex-grow: 1;
+    padding-left: 25px;
+}
+
+/* Main Panel */
+.main-panel {
+    max-width: 60%;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #fffaf1; /* Light paper tone */
+}
+
+/* Title Input */
+#note-title {
+padding: 12px;
+font-size: 32px;
+/* font-weight: bold; */
+/* font-family: 'Crimson Pro', serif; */
+font-family: 'Raleway', sans-serif;
+border: none;
+border: 1px solid #c2a477;
+border-radius: 6px;
+background: #f8f1e1;
+color: #8b5e3b;
+outline: none;
+margin-bottom: 10px;
+}
+
+
+/* Lined Paper Background for Notes */
+#note-content {
+flex: 1;
+padding: 12px;
+font-size: 16px;
+font-family: 'Crimson Pro', serif;
+border: 1px solid #c2a477;
+background: #f8f1e1;
+color: #5a4634;
+outline: none;
+resize: none;
+border-radius: 6px;
+line-height: 25px; /* Matches the line spacing */
+}

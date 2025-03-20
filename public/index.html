@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Note - Your Personal Note-Taking App</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="A simple and elegant note-taking application to store and manage your notes efficiently.">
+    <meta property="og:title" content="Simple Note - Your Personal Note-Taking App">
+    <meta property="og:description" content="Create, edit, and save notes with a simple and intuitive interface.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE">
+    <meta property="og:image" content="YOUR_IMAGE_URL_HERE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simple Note - Your Personal Note-Taking App">
+    <meta name="twitter:description" content="Create, edit, and save notes with a simple and intuitive interface.">
+    <meta name="twitter:image" content="YOUR_IMAGE_URL_HERE">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Simple Note</h2>
+            <button id="new-note-btn">+ New Note</button>
+            <ul id="notes-list"></ul>
+        </aside>
+
+        <section class="main-panel">
+            <input type="text" id="note-title" placeholder="Note Title">
+            <p id="note-timestamp" style="font-size: 12px; color: #5a4634; margin-top: 5px; padding-left: 15px;"></p>
+            <textarea id="note-content" placeholder="Write your note here..."></textarea>
+        </section>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
